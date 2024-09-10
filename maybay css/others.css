@@ -1,0 +1,92 @@
+
+.others > .gototop{
+    background-color: rgb(255, 81, 0);
+    visibility: hidden;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.others > .gototop > a > i {
+    margin-top: 35px;
+}
+.others > .gototop > a {
+    padding: 25px;
+}
+.others > .gototop > a:hover > i{
+    animation: gototop 0.5s ease forwards;
+}
+
+
+ .others > .popups > .khung{
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+    padding-top: 3%;
+  }
+  .others > .popups > .khung.closed {
+    visibility: hidden;
+  }
+
+  .others > .popups > .khung > .noidungngoai{
+    background-color: wheat;
+    margin: 0 auto;
+    border-radius: 50px ;
+    width: 40%;
+    height: 94%;
+    
+  }
+  .others > .popups > .khung > .noidungngoai > .close{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(248, 236, 213);
+    text-align: right;
+    border-radius: 50px 50px 0 0  ;
+    border-bottom: 4px solid rgb(226, 217, 200);
+  }
+  .others > .popups > .khung > .noidungngoai > .close > button{
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: red;
+    
+  }
+  .others > .popups > .khung > .noidungngoai > .close > button:hover {
+    cursor: pointer;
+    background-color: rgb(238, 0, 0);
+  }
+  .others > .popups > .khung > .noidungngoai > .noidungtrong {
+    background-color: rgb(251, 237, 212);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    overflow: auto;
+    scrollbar-color: black;
+    
+  }
+  .others > .popups > .khung > .noidungngoai > .noidungtrong > p{
+    font-weight: lighter;
+    text-align: left;
+    padding: 0 10px;
+  }
+  .others > .popups > .khung > .noidungngoai > .noidungtrong > h4{
+    padding-top: 10px;
+    color: rgb(144, 130, 105);
+    font-size: large;
+  }
+  .others > .popups > .khung > .noidungngoai > .noidungtrong > h3{
+    font-size: x-large;
+  }

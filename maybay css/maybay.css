@@ -1,0 +1,324 @@
+ /* setup */
+ *{
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #1e223e;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div > hr {
+    width: 70%;
+    height:5px;
+    background-color: #111223;
+    border: #181a34;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* dieuhuong */
+.thanhdieuhuong { 
+background-color: #071529;
+padding-left: 5%;
+padding-right: 2%;
+flex-wrap: wrap;
+}
+.thanhdieuhuong > div > a { 
+    text-decoration: none;
+    color: wheat;
+    padding: 20px;
+    border-radius: 10px ;
+}
+.thanhdieuhuong > div a:hover{
+    background-color: wheat;
+    color: #071529;
+}
+.thanhdieuhuong > div > div > a { /* dang ky dang nhap */
+    text-decoration: none;
+    color: wheat;
+    padding: 10px;
+    
+    border: 1px solid ;
+    border-radius: 10px;
+}
+/* noi dung trang chu */
+.trangchu {
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    padding: 0;
+    margin: 0;
+}
+.trangchu > p:last-child {
+    position: absolute;
+    right: 120px;
+    bottom: 23px;
+    color: #E28413;
+}
+.trangchu > p:first-child {
+    position: absolute;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    top: 50px ;
+    animation: trangchu 1s ease forwards;
+    color: #d59445;
+}
+.trangchu > button {
+    position: absolute;
+    right: 130px;
+    bottom: 80px;
+    width: 260px;
+    height: 75px;
+    border-radius: 20px;
+    background: linear-gradient(wheat,rgb(216, 174, 95));
+    color: #644608;
+    border: 2px solid rgb(224, 214, 181);
+    font-weight: bold;
+    font-size: larger;
+}
+.trangchu > button:hover {
+    background: linear-gradient(rgb(233, 206, 156),rgb(206, 170, 103));
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* địa điểm nổi tiếng */
+.diadiemnoitieng {
+    
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* địa điểm nổi tiếng (header) */
+.diadiemnoitieng > div > p { 
+    font-size: x-large;
+    margin: 0;
+    padding-left: 5px;
+    border-left: 12px solid #65DEF1;
+    border-radius: 3px;
+    color:wheat ;
+}
+
+/* địa điểm nổi tiếng (ảnh) */
+.pic img {
+    width: 150% ;
+}
+
+.diadiemnoitieng > div > div {
+    flex: 1;
+    height: 400px;
+    overflow: hidden;
+}
+.pic {
+    position: relative;
+    margin: 0px 10px 0px 0;
+    border-radius: 10px;
+}
+/* địa điểm nổi tiếng (xử lý sự kiện hover ảnh) */
+.pic img:hover {
+    animation: diadiemimg 0.5s ease forwards;
+    cursor: pointer;  
+    border-top: 5px solid #F96900;
+   
+}
+.gioithieuanh:hover + img {
+    animation: diadiemimg 0.5s ease forwards;
+    cursor: pointer;
+    border-top: 5px solid #F96900;
+}
+/* địa điểm nổi tiếng (giới thiệu ảnh) */
+.gioithieuanh{
+    position: absolute;
+    opacity: 0.9;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 20%;
+    top: 10px;
+   
+}
+
+/* địa điểm nổi tiếng (khám phá thêm) */
+.diadiemnoitieng >div:last-child{
+    margin-top: 70px;
+    text-align: center;
+}
+.diadiemnoitieng >div:last-child > a{
+    text-decoration: none;
+    padding: 10px ;
+    border: 3px solid wheat;
+    color: wheat;
+    border-radius: 5px;
+}
+.diadiemnoitieng >div:last-child > a:hover{
+    text-decoration: none;
+    padding: 10px ;
+    border: 3px solid wheat;
+    background-color: wheat;
+    color: #1e223e;
+    border-radius: 5px;
+}
+
+/* tải ứng dụng di động */
+.mobileapp { 
+    width: 95%;
+    height: 90px;
+    margin: 70px auto;
+    border-radius: 10px;
+    background-color: wheat;
+    overflow: hidden;
+    justify-content: left;
+}
+/* tải ứng dụng di động (icon)*/
+.mobileapp > .icon{
+    position: relative;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+.mobileapp > .icon > div{
+    top: 5px;
+    right: 45px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #242325;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.mobileapp > .icon > div img{
+    width: 110%;
+    padding-left: 0;
+    padding-top: 1px;
+}
+/* tải ứng dụng di động (chữ quảng bá) */
+.mobileapp > .text {
+    width: 60%;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(91, 81, 63);
+}
+/* tải ứng dụng di động (apple goole play) */
+.mobileapp > .applay {
+   
+    width: 20%;
+    height: 100%;
+}
+.mobileapp > .applay > div{
+width: 80%;
+height: 45%;
+margin: 0 auto;
+margin-left: 10px;
+overflow: hidden;
+border-radius: 5px;
+}
+.mobileapp > .applay > div > a > img{
+    
+    width: 100%;
+}
+
+/* phần cuối (hãng máy bay 4 sao) */
+.tuhao {
+    background-color: #1d2033;
+    margin-top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: left;
+}
+.tuhao > div:first-child{
+    margin-right: 30px;
+    margin-left: 10%;
+    height: 100%;
+    width: 5%;
+}
+.tuhao img {
+    width: 100%;
+}
+.tuhao > div:last-child{
+    color: wheat;
+    height: 100%;
+}
+.tuhao > div:last-child > p:last-child {
+    color: rgb(105, 96, 80);
+}
+/* phần cuối (các thông tin thêm) */
+.cacthongtinkhac {
+    width: 85%;
+    margin: auto;
+    height: 450px;
+}
+.cacthongtinkhac > .tieude{
+    align-items: flex-start;
+    list-style-type: none;
+    color: rgb(207, 186, 146);
+}
+.cacthongtinkhac > .tieude > li > .noidung {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+.cacthongtinkhac a{
+    text-decoration: none;
+    color: #d88040;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.cacthongtinkhac a:hover{
+    color: #ffa05c;
+}
+
+/* others */
+/* others (gototop) */
+@keyframes disappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* animation dùng riêng */
+@keyframes trangchu {
+    from{
+        left: -1000px;
+    }
+    to{
+        left: 30px;
+    }
+}
+@keyframes diadiemimg {
+    from{
+        width: 150%;
+    }
+    to{
+        width: 140%;
+    }
+}
+@keyframes gototop {
+    from{
+        margin-top: 35px;
+    }
+    to{
+        margin-top: 30px;
+    }
+}
